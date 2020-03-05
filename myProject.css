@@ -1,21 +1,22 @@
 * {
   box-sizing: border-box;
-  background-color:#eee;
+  background-color:rgb(95, 193, 238);
   overflow:auto;
+  
 }
 
 body {
 	text-align:center;
+	
 }
 
 div {
-	border:1px solid grey;
+	border:3px solid navy;
 	margin-top:20px;
 }
 
 #problem {
-	/* in Ex1, add one line here to specify the width of 
-	this element relative to the width of the viewport */ 
+	 
 	width: 90vw;
 	margin:auto;
 	margin-top:20px;
@@ -34,16 +35,14 @@ footer{
 	font-size:10px;
 }
 
-/* Responsive layout - makes the three columns stack 
-on top of each other instead of next to each other */
+
   img {
     width: 100%;
     height: auto;
 	margin-top:5px;
 	padding: 2px;
     display: none;
-    /* in Ex1, add one line here such that the img
-	does not display */
+   
   }
 
   [class*="column"] { 
@@ -57,8 +56,10 @@ on top of each other instead of next to each other */
 	  font-size:8px;
   }
 
-@media screen and (min-width:600px) {
-  [class*="column"] {
+@media screen and (min-width:600px) 
+{
+  [class*="column"]
+   {
     width:32%;
   }
   
@@ -67,4 +68,17 @@ on top of each other instead of next to each other */
 	font-size:1.2vw;
   }
 }
+.button
+{
+	margin: 5px;
+	border-radius: 5px;
+	background-color: rgb(48, 83, 199);
+	color: white;
+	border-color: navy;
+}
+.button:hover
+{
+	background-color: navy;
+}
+
 
